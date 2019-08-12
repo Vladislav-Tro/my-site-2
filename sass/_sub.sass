@@ -1,0 +1,39 @@
+.sub
+	padding-top: 56px
+	padding-bottom: 144px
+	background: url(../img/sub/sub-bg.jpg) center no-repeat
+	background-size: cover
+	&-title
+		margin-bottom: 25px
+		color: #fff
+	&-form
+		display: flex
+		justify-content: center
+		// flex-wrap: wrap
+	&-input
+		width: 415px
+		height: 55px
+		border: none
+		background-color: #fefefe
+		padding-left: 15px
+		&::placeholder
+			color: #d8d8d8
+			font-size: 19px
+	&-button
+		padding: 22px 43px
+		flex-basis: 100%
+		flex-basis: 130px
+		font-size: 10px
+		white-space: nowrap
+		border-radius: 0%
+
+@media (max-width: 768px)
+	.sub
+		padding-bottom: 100px
+@media (max-width: 576px)
+	.sub
+		padding-bottom: 70px
+	.sub-input
+		margin-bottom: 20px
+	.sub-form
+		flex-wrap: wrap

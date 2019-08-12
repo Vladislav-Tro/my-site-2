@@ -1,0 +1,52 @@
+.life
+	padding-top: 80px
+	padding-bottom: 100px
+	background-color: #efefef
+	&-title
+		margin-bottom: 39px
+	&-slider
+		&_top
+			margin: auto
+			margin-bottom: 13px
+			max-width: 694px
+		&_bottom
+			margin: auto
+			max-width: 694px
+			padding: 0 44px
+			max-height: 69px
+			img
+				max-height: auto
+				padding: 0 6px
+.slider-arrow__life
+	position: absolute
+	top: 0
+	height: 100%
+	z-index: 99
+	width: 31px
+	&:hover
+		cursor: pointer
+	&_left
+		left: 0
+		background: #2a2a2a url(../img/life/arrow_left.png) center no-repeat
+		transition: background-color 0.3s
+		&:hover
+			background: $accent2 url(../img/life/arrow_left.png) center no-repeat
+	&_right
+		right: 0
+		background: #2a2a2a url(../img/life/arrow_right.png) center no-repeat
+		transition: background-color 0.3s
+		&:hover
+			background: $accent2 url(../img/life/arrow_right.png) center no-repeat
+
+@media (max-width: 768px)
+	.slider-arrow
+		width: 25px	
+	.life-slider_bottom
+		padding: 0 30px
+	
+@media (max-width: 576px)
+	.life
+		padding-top: 60px
+		padding-bottom: 60px
+	.life-slider_bottom
+		display: none

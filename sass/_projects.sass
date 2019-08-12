@@ -1,0 +1,54 @@
+.projects
+	padding-top: 56px
+	&-title
+		margin-bottom: 47px
+.card-wrap
+	grid-template-columns: repeat(4, 1fr)
+.card
+	background-color: #efefef
+	transition: background-color 0.3s
+	&:hover
+		background-color: #ffe26d
+	&-text
+		padding-left: 44px
+		padding-bottom: 47px
+	&-title
+		margin-top: 40px
+		margin-bottom: 10px
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 15px
+	&-descr
+		margin-bottom: 15px
+		max-width: 275px
+		font-size: 13px
+		+helv
+		opacity: 0.5
+		line-height: 23.58px
+	&-button
+		font-size: 10px
+		background-color: #fff
+		&:hover
+			background-color: $accent2
+
+.container-fluid
+		max-width: 1436px
+
+@media (min-width: 992px) and (max-width: 1200px)
+	.card-text
+		padding-left: 30px
+
+@media (max-width: 992px)
+	.card-wrap
+		grid-template-columns: repeat(2, 1fr)
+		justify-items: center
+	.card
+		margin-bottom: 40px
+
+@media (max-width: 768px)
+	.card-wrap
+		grid-template-columns: 1fr
+	
+@media (max-width: 576px)
+	.projects
+		padding-top: 30px

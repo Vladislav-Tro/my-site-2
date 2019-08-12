@@ -1,0 +1,60 @@
+.videos
+	padding-top: 80px
+	padding-bottom: 110px
+	background-color: #62497c
+	&-title
+		margin-bottom: 40px
+		color: #fff
+	&-text
+		grid-template-columns: 1fr 1fr
+	&-block
+		max-width: 690px
+		margin: auto
+		&__video
+			margin-bottom: 23px
+			height: 0
+			position: relative
+			padding-bottom: 56.25%
+			iframe
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+		&-wrap
+			padding: 0 20px
+
+		&__title
+			text-transform: uppercase
+			font-size: 10px
+			font-weight: 700
+			color: #fff
+		&__duration
+			justify-self: end
+			text-transform: uppercase
+			font-size: 10px
+			font-weight: 700
+			color: #fff
+	&-slider
+		padding: 0
+
+.slider-arrow__videos
+	position: absolute
+	top: 0
+	height: 100%
+	z-index: 99
+	width: 31px
+	&_left
+		left: 10%
+		background: url(../img/life/arrow_left.png) center no-repeat
+	&_right
+		right: 10%
+		background: url(../img/life/arrow_right.png) center no-repeat
+
+
+@media (max-width: 576px)
+	.videos
+		padding-top: 50px
+		padding-bottom: 50px
+	.videos-block__video
+		margin-bottom: 10px

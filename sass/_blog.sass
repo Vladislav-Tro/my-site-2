@@ -1,0 +1,41 @@
+.blog
+	padding-top: 72px
+	padding-bottom: 88px
+	&-title
+		margin-bottom: 50px
+	&-wrap
+		grid-template-columns: repeat(3, 1fr)
+		justify-items: center
+		grid-gap: 30px
+	&-item
+		text-align: center
+		img
+			margin-bottom: 30px
+		&__title
+			margin-bottom: 19px
+			max-width: 208px
+			font-size: 15px
+			font-weight: 700
+			text-transform: uppercase
+		&__subtitle
+			margin-bottom: 20px
+			font-size: 13px
+			+helv
+			opacity: 0.5
+		&__descr
+			margin-bottom: 25px
+			max-width: 208px
+			font-size: 13px
+			line-height: 23.58px
+		&__button
+			padding: 16px 29px
+			font-size: 10px
+			background-color: #ececec
+			&:hover
+				color: #323232
+				background-color: $accent
+
+@media (max-width: 768px)
+	.blog-wrap
+		grid-template-columns: 1fr
+		grid-gap: 50px
